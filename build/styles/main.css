@@ -69,13 +69,42 @@ body {
 
 .v-container {
   height: 405px;
-  width: 100%; }
-
-.video {
   width: calc(100% - 240px); }
 
-.v-right-panel {
+.v-top {
+  background-color: black;
+  position: relative; }
+
+.v__share {
+  height: 60px; }
+
+.v-related {
+  background-color: #1e1e1e;
+  overflow: hidden;
+  padding-top: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
   width: 240px; }
+  .v-related__head {
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 100%; }
+  .v-related__list {
+    overflow: auto;
+    height: 100%; }
+  .v-related__list-item {
+    height: 1000px; }
+
+.v__controls {
+  height: 46px; }
+
+.v-bottom {
+  background-color: white; }
 
 .v__comments {
   height: 280px; }

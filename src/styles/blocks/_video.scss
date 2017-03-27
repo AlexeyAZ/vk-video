@@ -14,15 +14,57 @@
 
 .v-container {
     height: 405px;
-    width: 100%;
+    width: calc(100% - #{$v-related-width});
+}
+
+.v-top {
+    background-color: black;
+    position: relative;
+}
+
+.v__share {
+    height: 60px;
 }
 
 .video {
-    width: calc(100% - #{$video-right-panel-width});
+    //width: calc(100% - #{$v-related-width});
 }
 
-.v-right-panel {
-    width: $video-right-panel-width;
+.v-related {
+    background-color: $v-related-bg;
+    overflow: hidden;
+    padding-top: $v-related-head-height;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: $v-related-width;
+
+    &__head {
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: $v-related-head-height;
+        width: 100%;
+    }
+
+    &__list {
+        overflow: auto;
+        height: 100%;
+    }
+
+    &__list-item {
+        height: 1000px;
+    }
+}
+
+.v__controls {
+    height: 46px;
+}
+
+.v-bottom {
+    background-color: white;
 }
 
 .v__comments {
