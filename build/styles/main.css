@@ -55,7 +55,7 @@ body {
     height: 100%;
     width: 100%; }
 
-.video-bg {
+.v-bg {
   background-color: rgba(0, 0, 0, 0.8);
   position: fixed;
   top: 0;
@@ -63,13 +63,22 @@ body {
   height: 100%;
   width: 100%; }
 
-.video-wrap {
+.v-wrap {
   margin: 0 auto;
   width: 960px; }
 
-.video-container {
-  height: 360px;
-  width: 960px; }
+.v-container {
+  height: 405px;
+  width: 100%; }
+
+.video {
+  width: calc(100% - 240px); }
+
+.v-right-panel {
+  width: 240px; }
+
+.v__comments {
+  height: 280px; }
 
 .icon {
   display: inline-block;
