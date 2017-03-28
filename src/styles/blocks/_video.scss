@@ -13,6 +13,7 @@
 }
 
 .v-container {
+    position: relative;
     height: 405px;
     width: calc(100% - #{$v-related-width});
 }
@@ -22,152 +23,11 @@
     position: relative;
 }
 
-.v__share {
-    height: 60px;
-}
-
 .video {
     //width: calc(100% - #{$v-related-width});
 }
 
-.v-related {
-    background-color: $v-related-bg;
-    font-size: 12px;
-    overflow: hidden;
-    padding-top: $v-related-head-height;
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: $v-related-width;
 
-    &:hover {
-
-        .v-related__head-controls {
-            display: block;
-        }
-    }
-
-    &__head {
-        color: white;
-        padding: 0 12px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: $v-related-head-height;
-        width: 100%;
-    }
-
-    &__head-title {
-        line-height: $v-related-head-height;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    &__head-controls {
-        display: none;
-        position: absolute;
-        top: 0;
-        right: 14px;
-        height: 100%;
-
-        &:before {
-            content: "";
-            display: inline-block;
-            vertical-align: middle;
-            height: 100%;
-            width: 0;
-        }
-    }
-
-    &__head-controls-icon {
-        cursor: pointer;
-        display: inline-block;
-        margin-left: 10px;
-        vertical-align: middle;
-
-        &_autoplay {
-            background-image: url(../img/video_icon.png);
-            background-position: 0 -77px;
-            height: 11px;
-            width: 18px;
-        }
-
-        &_order {
-            background-image: url(../img/video_icon.png);
-            background-position: 0 -98px;
-            height: 11px;
-            width: 15px;
-        }
-    }
-
-    &__list {
-        overflow: auto;
-        height: 100%;
-    }
-
-    &__list-item {
-        display: block;
-        overflow: hidden;
-        padding: 6px 5px 6px 10px;
-        text-decoration: none;
-
-        &:hover {
-            background-color: $v-related__list-item-hover;
-        }
-
-        &_active {
-            background-color: $v-related__list-item-active;
-
-            &:hover {
-                background-color: $v-related__list-item-active;
-            }
-        }
-    }
-
-    &__list-img {
-        background-color: cadetblue;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        border-radius: 2px;
-        float: left;
-        position: relative;
-        height: 55px;
-        width: $v-related__list-img-width;
-    }
-
-    &__list-img-duration {
-        background-color: black;
-        background-color: rgba(0,0,0,0.6);
-        border-radius: 2px 0 0 0;
-        color: white;
-        padding: 2px 4px 1px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    &__list-info {
-        color: white;
-        padding-left: $v-related__list-img-width + 10px;
-    }
-
-    &__list-name {
-        opacity: 0.7;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-
-    &__list-views {
-        opacity: 0.35;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-}
 
 .v__controls {
     height: 46px;
