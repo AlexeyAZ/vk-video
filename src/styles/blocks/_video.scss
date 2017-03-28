@@ -32,6 +32,7 @@
 
 .v-related {
     background-color: $v-related-bg;
+    font-size: 12px;
     overflow: hidden;
     padding-top: $v-related-head-height;
     position: absolute;
@@ -42,11 +43,19 @@
 
     &__head {
         color: white;
+        padding: 0 12px;
         position: absolute;
         top: 0;
         left: 0;
         height: $v-related-head-height;
         width: 100%;
+    }
+
+    &__head-title {
+        line-height: $v-related-head-height;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     &__list {
@@ -55,7 +64,53 @@
     }
 
     &__list-item {
-        height: 1000px;
+        display: block;
+        overflow: hidden;
+        padding: 6px 5px 6px 10px;
+        text-decoration: none;
+
+        &:hover {
+            background-color: $v-related__list-item-hover;
+        }
+    }
+
+    &__list-img {
+        background-color: cadetblue;
+        border-radius: 2px;
+        float: left;
+        position: relative;
+        height: 55px;
+        width: $v-related__list-img-width;
+    }
+
+    &__list-img-duration {
+        background-color: black;
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 2px 0 0 0;
+        color: white;
+        padding: 2px 4px 1px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    &__list-info {
+        color: white;
+        padding-left: $v-related__list-img-width + 10px;
+    }
+
+    &__list-name {
+        opacity: 0.7;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__list-views {
+        opacity: 0.35;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 }
 

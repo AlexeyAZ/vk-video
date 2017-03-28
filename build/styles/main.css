@@ -80,6 +80,7 @@ body {
 
 .v-related {
   background-color: #1e1e1e;
+  font-size: 12px;
   overflow: hidden;
   padding-top: 30px;
   position: absolute;
@@ -89,16 +90,56 @@ body {
   width: 240px; }
   .v-related__head {
     color: white;
+    padding: 0 12px;
     position: absolute;
     top: 0;
     left: 0;
     height: 30px;
     width: 100%; }
+  .v-related__head-title {
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .v-related__list {
     overflow: auto;
     height: 100%; }
   .v-related__list-item {
-    height: 1000px; }
+    display: block;
+    overflow: hidden;
+    padding: 6px 5px 6px 10px;
+    text-decoration: none; }
+    .v-related__list-item:hover {
+      background-color: #272727; }
+  .v-related__list-img {
+    background-color: cadetblue;
+    border-radius: 2px;
+    float: left;
+    position: relative;
+    height: 55px;
+    width: 100px; }
+  .v-related__list-img-duration {
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 2px 0 0 0;
+    color: white;
+    padding: 2px 4px 1px;
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  .v-related__list-info {
+    color: white;
+    padding-left: 110px; }
+  .v-related__list-name {
+    opacity: 0.7;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .v-related__list-views {
+    opacity: 0.35;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .v__controls {
   height: 46px; }
