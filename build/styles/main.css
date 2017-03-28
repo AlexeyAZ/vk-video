@@ -68,9 +68,13 @@ body {
   width: 960px; }
 
 .v-container {
+  overflow: hidden;
   position: relative;
   height: 405px;
   width: calc(100% - 240px); }
+  .v-container:hover .v-share {
+    -ms-transform: translateY(0);
+        transform: translateY(0); }
 
 .v-top {
   background-color: black;
@@ -189,6 +193,11 @@ body {
     white-space: nowrap; }
 
 .v-share {
+  -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+  transition: 0.3s linear;
+  font-size: 0;
+  padding: 10px;
   position: absolute;
   top: 0;
   right: 0;
@@ -196,11 +205,12 @@ body {
   .v-share__btn {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 3px;
+    display: inline-block;
     cursor: pointer;
     position: relative;
     line-height: 37px;
-    font-size: 0;
     text-align: center;
+    margin-left: 10px;
     width: 37px;
     height: 37px; }
     .v-share__btn:before {

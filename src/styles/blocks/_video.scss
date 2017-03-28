@@ -13,9 +13,17 @@
 }
 
 .v-container {
+    overflow: hidden;
     position: relative;
     height: 405px;
     width: calc(100% - #{$v-related-width});
+
+    &:hover {
+        
+        .v-share {
+            transform: translateY(0);
+        }
+    }
 }
 
 .v-top {
