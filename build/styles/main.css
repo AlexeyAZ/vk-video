@@ -140,6 +140,14 @@ body {
   height: 14px;
   width: 12px; }
 
+.icon-volume {
+  height: 16px;
+  width: 19px; }
+
+.icon-fullscreen {
+  width: 18px;
+  height: 18px; }
+
 .v-related {
   background-color: #1e1e1e;
   font-size: 12px;
@@ -292,6 +300,8 @@ body {
       padding: 0 10px 0 18px; }
     .v-controls__btn_next-video {
       padding: 0 18px 0 8px; }
+    .v-controls__btn_volume {
+      padding: 0 10px; }
     .v-controls__btn:hover {
       transition: 0.2s ease;
       opacity: 0.7; }
@@ -323,7 +333,7 @@ body {
     vertical-align: middle;
     color: white;
     font-size: 13px;
-    padding: 0 15px;
+    padding: 0 5px 0 15px;
     height: 100%; }
     .v-controls__time-wrap:before {
       content: "";
@@ -338,6 +348,24 @@ body {
       opacity: 0.7; }
       .v-controls__time_duration:before {
         content: "/"; }
+  .v-controls__volume {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; }
+  .v-controls__volume-wrap {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 50px; }
+    .v-controls__volume-wrap:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .v-controls__volume-slider {
+    vertical-align: middle; }
 
 .icon {
   display: inline-block;
