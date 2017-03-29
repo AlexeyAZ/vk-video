@@ -76,6 +76,9 @@ body {
   .v-container:hover .v-share {
     -ms-transform: translateY(0);
         transform: translateY(0); }
+  .v-container:hover .v-controls {
+    -ms-transform: translateY(0);
+        transform: translateY(0); }
 
 .v-top {
   background-color: black;
@@ -148,6 +151,20 @@ body {
 .icon-fullscreen {
   width: 18px;
   height: 18px; }
+
+.icon-nav-left {
+  background-image: url("../img/layer_controls.png");
+  background-position: 0 -23px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 20px; }
+
+.icon-nav-right {
+  background-image: url("../img/layer_controls.png");
+  background-position: 0 -55px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 20px; }
 
 .v-related {
   background-color: #1e1e1e;
@@ -252,13 +269,14 @@ body {
 .v-share {
   -ms-transform: translateY(-100%);
       transform: translateY(-100%);
-  transition: 0.3s linear;
+  transition: all 0.3s ease;
   font-size: 0;
   padding: 10px;
   position: absolute;
   top: 0;
   right: 0;
-  height: 60px; }
+  height: 60px;
+  z-index: 3; }
   .v-share__btn {
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 3px;
@@ -286,10 +304,14 @@ body {
     opacity: 0.7; }
 
 .v-controls {
+  transition: all 0.3s ease;
+  -ms-transform: translateY(100%);
+      transform: translateY(100%);
   position: absolute;
   left: 0;
   bottom: 0;
-  height: 46px; }
+  height: 46px;
+  z-index: 3; }
   .v-controls__actions {
     font-size: 0;
     height: 100%; }
@@ -387,6 +409,9 @@ body {
       vertical-align: middle;
       height: 100%;
       width: 0; }
+    .v-controls__quality:hover .v-controls__quality-list {
+      opacity: 1;
+      visibility: visible; }
   .v-controls__quality-value {
     display: inline-block;
     font-weight: bold;
@@ -406,9 +431,12 @@ body {
     .v-controls__quality-value:hover {
       opacity: 0.7; }
   .v-controls__quality-list {
+    transition: all 0.3s ease;
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 3px;
     color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    visibility: hidden;
     padding-bottom: 27px;
     position: absolute;
     bottom: 10px;
@@ -422,6 +450,27 @@ body {
     .v-controls__quality-list-item:hover {
       background-color: rgba(255, 255, 255, 0.1);
       color: white; }
+
+.v-nav {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 64px; }
+  .v-nav_left {
+    right: 100%; }
+  .v-nav_right {
+    left: 100%; }
+  .v-nav__icon {
+    -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%; }
+  .v-nav__actions {
+    position: absolute;
+    top: 0;
+    left: 0; }
 
 .icon {
   display: inline-block;

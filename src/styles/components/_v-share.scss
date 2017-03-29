@@ -1,12 +1,13 @@
 .v-share {
     transform: translateY(-100%);
-    transition: 0.3s linear;
+    transition: $trans;
     font-size: 0;
     padding: 10px;
     position: absolute;
     top: 0;
     right: 0;
     height: 60px;
+    z-index: 3;
 
     &__btn {
         background-color: rgba(0,0,0,0.6);

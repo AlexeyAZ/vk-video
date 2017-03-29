@@ -1,0 +1,28 @@
+.v-nav {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 64px;
+
+    &_left {
+        right: 100%;
+    }
+
+    &_right {
+        left: 100%;
+    }
+
+    &__icon {
+        transform: translate(-50%, -50%);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+
+    &__actions {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}

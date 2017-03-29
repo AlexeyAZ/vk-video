@@ -8,6 +8,12 @@ block content
     div.v-bg
         div.v-wrap
             div.v-top
+                div.v-nav.v-nav_left
+                    div.icon-nav-left.v-nav__icon
+                div.v-nav.v-nav_right
+                    div.icon-nav-right.v-nav__icon
+                    div.v-nav__actions
+                        div.v-nav__actions-btn
                 div.v-container
                     div.v-share
                         div.v-share__btn
@@ -56,6 +62,14 @@ block content
                                         Авто
                                     div.v-controls__quality-list-item.
                                         1080
+                                    div.v-controls__quality-list-item.
+                                        720
+                                    div.v-controls__quality-list-item.
+                                        480
+                                    div.v-controls__quality-list-item.
+                                        360
+                                    div.v-controls__quality-list-item.
+                                        240
                 div.v-related
                     div.v-related__head
                         div.v-related__head-title.
@@ -96,102 +110,24 @@ block content
                                     span.v-related__list-views-number.
                                         1 000 000 
                                     |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
-                        a(href="").v-related__list-item
-                            div.v-related__list-img
-                                div.v-related__list-img-duration
-                                    span.v-related__list-img-time.v-related__list-img-time_hours.
-                                        01:
-                                    span.v-related__list-img-time.v-related__list-img-time_minutes.
-                                        23:
-                                    span.v-related__list-img-time.v-related__list-img-time_seconds.
-                                        45
-                            div.v-related__list-info
-                                div.v-related__list-name.
-                                    Video name
-                                div.v-related__list-views
-                                    span.v-related__list-views-number.
-                                        1 000 000 
-                                    |просмотров
+                        - for(var i = 1; i < 10; i++) {
+                            a(href="").v-related__list-item
+                                div.v-related__list-img
+                                    div.v-related__list-img-duration
+                                        span.v-related__list-img-time.v-related__list-img-time_hours.
+                                            01:
+                                        span.v-related__list-img-time.v-related__list-img-time_minutes.
+                                            23:
+                                        span.v-related__list-img-time.v-related__list-img-time_seconds.
+                                            45
+                                div.v-related__list-info
+                                    div.v-related__list-name.
+                                        Video name
+                                    div.v-related__list-views
+                                        span.v-related__list-views-number.
+                                            1 000 000 
+                                        |просмотров
+                        - }
             div.v-bottom
                 div.v-info
                     div.v__info-head
