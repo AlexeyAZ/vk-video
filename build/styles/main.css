@@ -80,9 +80,6 @@ body {
   background-color: black;
   position: relative; }
 
-.v__controls {
-  height: 46px; }
-
 .v-bottom {
   background-color: white; }
 
@@ -92,6 +89,22 @@ body {
 .icon-like {
   height: 15px;
   width: 17px; }
+
+.icon-share {
+  height: 15px;
+  width: 14px; }
+
+.icon-add {
+  height: 17px;
+  width: 17px; }
+
+.icon-play {
+  height: 18px;
+  width: 21px; }
+
+.icon-next-video {
+  height: 14px;
+  width: 12px; }
 
 .v-related {
   background-color: #1e1e1e;
@@ -114,6 +127,7 @@ body {
     height: 30px;
     width: 100%; }
   .v-related__head-title {
+    font-weight: bold;
     line-height: 30px;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -227,6 +241,80 @@ body {
     display: inline-block;
     vertical-align: middle;
     opacity: 0.7; }
+
+.v-controls {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 46px; }
+  .v-controls__actions {
+    font-size: 0;
+    height: 100%; }
+  .v-controls__btn {
+    display: inline-block;
+    cursor: pointer;
+    height: 100%; }
+    .v-controls__btn_play {
+      padding: 0 10px 0 18px; }
+    .v-controls__btn_next-video {
+      padding: 0 18px 0 8px; }
+    .v-controls__btn:hover {
+      transition: 0.2s ease;
+      opacity: 0.7; }
+    .v-controls__btn:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .v-controls__btn-icon {
+    display: inline-block;
+    vertical-align: middle; }
+  .v-controls__progress-wrap {
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    width: 348px; }
+    .v-controls__progress-wrap:hover .v-controls__progress-slider {
+      opacity: 1;
+      height: 13px;
+      width: 13px; }
+    .v-controls__progress-wrap:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .v-controls__progress {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    height: 5px;
+    width: 100%; }
+  .v-controls__progress-line {
+    background-color: white;
+    border-radius: 3px;
+    padding: 0 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; }
+  .v-controls__progress-slider {
+    -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    transition: 0.2s ease;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 0;
+    width: 0; }
 
 .icon {
   display: inline-block;

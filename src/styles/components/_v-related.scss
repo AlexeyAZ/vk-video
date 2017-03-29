@@ -27,6 +27,7 @@
     }
 
     &__head-title {
+        font-weight: bold;
         line-height: $v-related-head-height;
         overflow: hidden;
         text-overflow: ellipsis;
