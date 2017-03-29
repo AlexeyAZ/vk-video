@@ -68,6 +68,7 @@ body {
   width: 960px; }
 
 .v-container {
+  background-color: green;
   overflow: hidden;
   position: relative;
   height: 405px;
@@ -293,6 +294,7 @@ body {
     font-size: 0;
     height: 100%; }
   .v-controls__btn {
+    transition: all 0.3s ease;
     display: inline-block;
     cursor: pointer;
     height: 100%; }
@@ -301,6 +303,8 @@ body {
     .v-controls__btn_next-video {
       padding: 0 18px 0 8px; }
     .v-controls__btn_volume {
+      padding: 0 10px; }
+    .v-controls__btn_fullscreen {
       padding: 0 10px; }
     .v-controls__btn:hover {
       transition: 0.2s ease;
@@ -351,6 +355,7 @@ body {
   .v-controls__volume {
     display: inline-block;
     vertical-align: middle;
+    padding-right: 8px;
     height: 100%; }
   .v-controls__volume-wrap {
     cursor: pointer;
@@ -366,6 +371,57 @@ body {
       width: 0; }
   .v-controls__volume-slider {
     vertical-align: middle; }
+  .v-controls__quality {
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 8px;
+    position: relative;
+    height: 100%; }
+    .v-controls__quality:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .v-controls__quality-value {
+    display: inline-block;
+    font-weight: bold;
+    vertical-align: middle;
+    position: relative;
+    z-index: 2; }
+    .v-controls__quality-value:after {
+      content: "";
+      display: inline-block;
+      border-style: solid;
+      border-width: 4px 3px 0 3px;
+      border-color: #ffffff transparent transparent transparent;
+      vertical-align: middle;
+      margin: 1px 0 0 4px;
+      height: 0;
+      width: 0; }
+    .v-controls__quality-value:hover {
+      opacity: 0.7; }
+  .v-controls__quality-list {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 27px;
+    position: absolute;
+    bottom: 10px;
+    right: 0;
+    width: 100%;
+    z-index: 1; }
+  .v-controls__quality-list-item {
+    transition: all 0.3s ease;
+    text-align: right;
+    padding: 4px 14px 4px 0; }
+    .v-controls__quality-list-item:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white; }
 
 .icon {
   display: inline-block;

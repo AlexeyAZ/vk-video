@@ -10,6 +10,7 @@
     }
 
     &__btn {
+        transition: $trans;
         display: inline-block;
         cursor: pointer;
         height: 100%;
@@ -23,6 +24,10 @@
         }
 
         &_volume {
+            padding: 0 10px;
+        }
+
+        &_fullscreen {
             padding: 0 10px;
         }
 
@@ -98,6 +103,7 @@
     &__volume {
         display: inline-block;
         vertical-align: middle;
+        padding-right: 8px;
         height: 100%;
     }
 
@@ -119,5 +125,72 @@
 
     &__volume-slider {
         vertical-align: middle;
+    }
+
+    &__quality {
+        transition: $trans;
+        cursor: pointer;
+        color: white;
+        font-size: 13px;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 0 8px;
+        position: relative;
+        height: 100%;
+
+        &:before {
+            content: "";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%;
+            width: 0;
+        }
+    }
+
+    &__quality-value {
+        display: inline-block;
+        font-weight: bold;
+        vertical-align: middle;
+        position: relative;
+        z-index: 2;
+
+        &:after {
+            content: "";
+            display: inline-block;
+            border-style: solid;
+            border-width: 4px 3px 0 3px;
+            border-color: #ffffff transparent transparent transparent;
+            vertical-align: middle;
+            margin: 1px 0 0 4px;
+            height: 0;
+            width: 0;
+        }
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+
+    &__quality-list {
+        background-color: rgba(0,0,0,0.75);
+        border-radius: 3px;
+        color: rgba(255,255,255,0.7);
+        padding-bottom: 27px;
+        position: absolute;
+        bottom: 10px;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    &__quality-list-item {
+        transition: $trans;
+        text-align: right;
+        padding: 4px 14px 4px 0;
+
+        &:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
     }
 }
