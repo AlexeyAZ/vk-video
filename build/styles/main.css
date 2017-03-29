@@ -86,6 +86,40 @@ body {
 .v__comments {
   height: 280px; }
 
+.v-slider-wrap:hover .v-slider__circle {
+  opacity: 1;
+  height: 13px;
+  width: 13px; }
+
+.v-slider {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+  height: 5px;
+  width: 100%; }
+  .v-slider__progress {
+    background-color: white;
+    border-radius: 3px;
+    padding: 0 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 50%; }
+  .v-slider__circle {
+    -ms-transform: translate(50%, -50%);
+        transform: translate(50%, -50%);
+    transition: 0.2s ease;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: 0;
+    width: 0; }
+
 .icon-like {
   height: 15px;
   width: 17px; }
@@ -276,45 +310,34 @@ body {
     vertical-align: middle;
     height: 100%;
     width: 348px; }
-    .v-controls__progress-wrap:hover .v-controls__progress-slider {
-      opacity: 1;
-      height: 13px;
-      width: 13px; }
     .v-controls__progress-wrap:before {
       content: "";
       display: inline-block;
       vertical-align: middle;
       height: 100%;
       width: 0; }
-  .v-controls__progress {
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 3px;
+  .v-controls__progress-slider {
+    vertical-align: middle; }
+  .v-controls__time-wrap {
     display: inline-block;
     vertical-align: middle;
-    position: relative;
-    height: 5px;
-    width: 100%; }
-  .v-controls__progress-line {
-    background-color: white;
-    border-radius: 3px;
-    padding: 0 2px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 50%; }
-  .v-controls__progress-slider {
-    -ms-transform: translate(50%, -50%);
-        transform: translate(50%, -50%);
-    transition: 0.2s ease;
-    background-color: white;
-    border-radius: 50%;
-    opacity: 0;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    height: 0;
-    width: 0; }
+    color: white;
+    font-size: 13px;
+    padding: 0 15px;
+    height: 100%; }
+    .v-controls__time-wrap:before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      height: 100%;
+      width: 0; }
+  .v-controls__time {
+    display: inline-block;
+    vertical-align: middle; }
+    .v-controls__time_duration {
+      opacity: 0.7; }
+      .v-controls__time_duration:before {
+        content: "/"; }
 
 .icon {
   display: inline-block;
