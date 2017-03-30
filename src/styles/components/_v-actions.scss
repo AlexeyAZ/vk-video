@@ -1,0 +1,27 @@
+.v-actions {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: $v-actions-width;
+    z-index: $v-actions-z-index;
+
+    &__btn {
+        transition: $trans;
+        opacity: 0.3;
+        cursor: pointer;
+        padding: 4px 0;
+        width: 100%;
+
+        &:hover {
+            opacity: 1;
+        }
+
+        &_minimize {
+            padding: 10px 0;
+        }
+    }
+
+    &__btn-icon {
+        margin: 0 auto;
+    }
+}

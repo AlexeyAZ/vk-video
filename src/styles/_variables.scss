@@ -10,3 +10,11 @@ $v-related__list-img-width: 100px;
 
 $v-controls-progress-width: 348px;
 $v-controls-volume-width: 50px;
+
+$v-nav-width: 64px;
+$v-nav-z-index: 3;
+
+$v-actions-width: $v-nav-width;
+$v-actions-z-index: $v-nav-z-index + 1;
+
+$v-info-views-width: 170px;

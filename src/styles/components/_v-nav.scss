@@ -3,7 +3,15 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 64px;
+    width: $v-nav-width;
+    z-index: $v-nav-z-index;
+
+    &:hover {
+
+        .v-nav__icon {
+            opacity: 1;
+        }
+    }
 
     &_left {
         right: 100%;
@@ -14,15 +22,11 @@
     }
 
     &__icon {
+        transition: $trans;
         transform: translate(-50%, -50%);
+        opacity: 0.3;
         position: absolute;
         top: 50%;
         left: 50%;
-    }
-
-    &__actions {
-        position: absolute;
-        top: 0;
-        left: 0;
     }
 }
