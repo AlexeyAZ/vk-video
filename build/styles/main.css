@@ -84,11 +84,19 @@ body {
   background-color: #1e1e1e;
   position: relative; }
 
-.v-bottom {
-  background-color: white; }
-
 .v__comments {
   height: 280px; }
+
+.v-bottom {
+  background-color: white;
+  position: relative;
+  min-height: 250px; }
+  .v-bottom .v-related__list-item:hover {
+    background-color: transparent; }
+  .v-bottom .v-related__list-item_active {
+    background-color: transparent; }
+    .v-bottom .v-related__list-item_active:hover {
+      background-color: transparent; }
 
 .v-slider-wrap:hover .v-slider__circle {
   opacity: 1;

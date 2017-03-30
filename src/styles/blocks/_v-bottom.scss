@@ -1,0 +1,20 @@
+.v-bottom {
+    background-color: white;
+    position: relative;
+    min-height: 250px;
+
+    .v-related__list-item {
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    .v-related__list-item_active {
+        background-color: transparent;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+}
