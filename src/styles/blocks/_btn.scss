@@ -1,0 +1,44 @@
+.btn {
+    transition: $trans;
+    background-color: transparent;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    outline: none;
+
+    &__item {
+        display: inline-block;
+        line-height: 15px;
+
+        &_text {
+            margin: 0 4px;
+        }
+    }
+
+    &_fill {
+        background-color: $btn-fill-bg;
+        color: white;
+        padding: 7px 14px 8px;
+    }
+
+    &__icon-like {
+        transition: $trans;
+        opacity: 0.3;
+    }
+}
+
+.btn-like {
+
+    &__count {
+        font-weight: bold;
+    }
+
+    &:hover {
+        background-color: $btn-fill-hover-bg;
+
+        .btn__icon-like {
+            opacity: 1;
+        }
+    }
+}
