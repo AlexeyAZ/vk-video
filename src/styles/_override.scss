@@ -1,0 +1,23 @@
+a {
+	color: $link;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+input {
+	border: none;
+	outline: none;
+}
+
+textarea {
+	border: none;
+	outline: none;
+}

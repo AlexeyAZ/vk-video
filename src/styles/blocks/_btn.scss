@@ -2,14 +2,74 @@
     transition: $trans;
     background-color: transparent;
     border-radius: 2px;
-    border: none;
     cursor: pointer;
+    color: $btn;
     font-size: 13px;
-    outline: none;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    position: relative;
+    vertical-align: top;
+
+    &:hover {
+        background-color: $btn-hover-bg;
+    }
+
+    &:active {
+        padding-bottom: 7px;
+        padding-top: 8px;
+    }
+
+    &_popup {
+        transition: none;
+        padding-left: 16px;
+        padding-right: 16px;
+
+        .btn__item_text {
+            margin-left: 0;
+        }
+
+        &:hover {
+
+            &:after {
+                z-index: 2;
+            }
+
+            .btn__item {
+                z-index: 2;
+            }
+
+            .btn__popup {
+                display: block;
+            }
+        }
+    }
+
+    &_arrow {
+
+        &:after {
+            content: "";
+            border-style: solid;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            width: 0;
+            height: 0;
+        }
+    }
+
+    &_arrow-down {
+
+        &:after {
+            border-width: 4px 4px 0 4px;
+            border-color: #b7c4d1 transparent transparent transparent;
+            top: -1px;
+        }
+    }
 
     &__item {
         display: inline-block;
         line-height: 15px;
+        position: relative;
 
         &_text {
             margin: 0 4px;
@@ -19,12 +79,66 @@
     &_fill {
         background-color: $btn-fill-bg;
         color: white;
-        padding: 7px 14px 8px;
+        padding-left: 14px;
+        padding-right: 14px;
+
+        &:hover {
+            background-color: $btn-fill-hover-bg;
+        }
     }
 
     &__icon-like {
         transition: $trans;
         opacity: 0.3;
+    }
+
+    &__icon-share-s {
+        top: 2px;
+    }
+
+    &__icon-add-s {
+        top: 1px;
+    }
+
+    &__popup {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        border-radius: 2px 2px 0 0;
+        height: 100%;
+    }
+
+    &__popup-head {
+        background-color: $btn-popup-head;
+        border-top: 1px solid $btn-popup-border;
+        border-left: 1px solid $btn-popup-border;
+        border-right: 1px solid $btn-popup-border;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.22);
+        position: relative;
+        height: 100%;
+        z-index: 1;
+    }
+
+    &__popup-list {
+        background-color: white;
+        border-radius: 0 0 2px 2px;
+        border-left: 1px solid $btn-popup-border;
+        border-right: 1px solid $btn-popup-border;
+        border-bottom: 1px solid $btn-popup-border;
+        box-shadow: 0px 1px 3px rgba(0,0,0,0.22);
+        text-align: left;
+        position: relative;
+        z-index: 100;
+    }
+
+    &__popup-list-item {
+        padding: 7px 16px 8px;
+
+        &:hover {
+            background-color: #e1e7ed;
+        }
     }
 }
 
@@ -35,7 +149,6 @@
     }
 
     &:hover {
-        background-color: $btn-fill-hover-bg;
 
         .btn__icon-like {
             opacity: 1;

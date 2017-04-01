@@ -1,0 +1,60 @@
+.v-info-wrap {
+    padding: 20px;
+    width: calc(100% - #{$v-related-width});
+}
+
+.v-head {
+    padding-bottom: 15px;
+    white-space: nowrap;
+
+    @include media(w500) {
+        white-space: normal;
+    }
+
+    &__title {
+        font-size: 17px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 20px;
+        width: calc(100% - #{$v-info-views-width});
+
+        @include media(w768) {
+            font-size: 15px;
+        }
+
+        @include media(w500) {
+            display: none;
+        }
+    }
+
+    &__mobile-title {
+        display: none;
+        font-size: 15px;
+
+        @include media(w500) {
+            display: block;
+        }
+    }
+
+    &__views {
+        color: #939393;
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        float: right;
+        width: $v-info-views-width;
+
+        @include media(w768) {
+            font-size: 12px;
+        }
+
+        @include media(w500) {
+            overflow: none;
+            text-overflow: none;
+            float: none;
+            width: auto;
+        }
+    }
+}

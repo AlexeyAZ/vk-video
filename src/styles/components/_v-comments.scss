@@ -1,0 +1,41 @@
+.v-comments {
+	border-top: 1px solid $border;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	&__container {
+		position: relative;
+	}
+
+	&__img-link {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	&__img {
+		display: block;
+		border-radius: 50%;
+		height: 28px;
+		width: 28px;
+	}
+
+	&__form {
+		padding-left: 40px;
+		min-height: 28px;
+	}
+	
+	&__input {
+		font-family: "SFUIText", sans-serif;
+		color: black;
+		width: 100%;
+
+		@include placeholder {
+			color: $v-comments-input;
+		}
+	}
+}

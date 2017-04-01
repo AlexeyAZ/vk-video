@@ -1,0 +1,31 @@
+.v-container {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    height: 405px;
+    width: calc(100% - #{$v-related-width});
+
+    @include media(w1024) {
+        width: calc(100% - #{$v-related-width-tablet});
+    }
+
+    @include media(w768) {
+        height: 355px;
+    }
+
+    @include media(w500) {
+        height: 255px;
+        width: 100%;
+    }
+
+    &:hover {
+        
+        .v-share {
+            transform: translateY(0);
+        }
+
+        .v-controls {
+            transform: translateY(0);
+        }
+    }
+}

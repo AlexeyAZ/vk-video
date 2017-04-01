@@ -81,10 +81,34 @@
     width: 20px;
 }
 
-.icon-like {
+.icon-like-s {
     background-image: url("../img/video_actions.png");
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 10px;
     width: 13px;
+}
+
+.icon-share-s {
+    background-image: url("../img/video_actions.png");
+    background-repeat: no-repeat;
+    background-position: 0 -44px;
+    height: 13px;
+    width: 12px;
+}
+
+.icon-add-s {
+    background-image: url("../img/video_actions.png");
+    background-repeat: no-repeat;
+    background-position: 0 -15px;
+    height: 12px;
+    width: 12px;
+}
+
+.icon-add-light-s {
+    background-image: url("../img/video_actions.png");
+    background-repeat: no-repeat;
+    background-position: 0 -122px;
+    height: 12px;
+    width: 12px;
 }

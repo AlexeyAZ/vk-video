@@ -3,28 +3,35 @@
 @import "mixins";
 @import "helpers";
 @import "typography";
+@import "override";
 
 @import "app";
 
 
 @import "blocks/site-bg";
-@import "blocks/video";
-@import "blocks/header";
-@import "blocks/container";
-@import "blocks/footer";
+@import "blocks/v-bg";
+@import "blocks/v-wrap";
+@import "blocks/v-top";
+@import "blocks/v-container";
 @import "blocks/v-bottom";
+@import "blocks/v-info-container";
 @import "blocks/btn";
 
 
 @import "components/v-slider";
 
 @import "components/icons";
+@import "components/v-video";
 @import "components/v-related";
 @import "components/v-share";
 @import "components/v-controls";
 @import "components/v-nav";
 @import "components/v-actions";
-@import "components/v-info";
+@import "components/v-head";
+@import "components/v-all-actions";
+@import "components/v-group";
+@import "components/v-comments";
 @import "components/v-other-video";
+@import "components/v-loader";
 
 @import "sprite";

@@ -1,0 +1,18 @@
+.v-wrap {
+	box-sizing: content-box;
+    margin: 60px auto;
+	padding: 0 $v-nav-width;
+    max-width: 960px;
+
+	@include media(w768) {
+		padding: 0 20px;
+    }
+
+	@include media(w500) {
+		box-sizing: border-box;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		padding: 0 5px;
+        width: 100%;
+    }
+}

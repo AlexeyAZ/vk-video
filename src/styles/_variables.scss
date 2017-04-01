@@ -1,14 +1,18 @@
 $trans: all 0.3s ease;
 
+$border: #e7e8ec;
+$link: #2a5885;
+
 $v-related-bg: #1e1e1e;
 $v-related-width: 240px;
+$v-related-width-tablet: 140px;
 $v-related-head-height: 30px;
 
 $v-related__list-item-hover: #272727;
 $v-related__list-item-active: #2e2e2e;
 $v-related__list-img-width: 100px;
 
-$v-controls-progress-width: 348px;
+$v-controls-progress-width: 346px;
 $v-controls-volume-width: 50px;
 
 $v-nav-width: 64px;
@@ -19,5 +23,16 @@ $v-actions-z-index: $v-nav-z-index + 1;
 
 $v-info-views-width: 170px;
 
+$btn: #4a7198;
+$btn-hover-bg: #e5ebf1;
 $btn-fill-bg: #5e81a8;
 $btn-fill-hover-bg: #6888ad;
+
+$btn-popup-border: #b2bdcb;
+$btn-popup-head: $btn-hover-bg;
+
+$v-group-info-date: #939393;
+
+$v-comments-input: #828282;
+
+

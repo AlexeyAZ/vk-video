@@ -1,0 +1,58 @@
+.v-loader {
+	background-color: black;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	animation: loaderAnimate 0s ease 5s forwards;
+
+	&__circles {
+		transform: translate(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	}
+
+	&__circle {
+		background-color: rgba(0,0,0,0.5);
+		border-radius: 50%;
+		display: inline-block;
+		margin-right: 3px;
+		height: 8px;
+		width: 8px;
+		animation: circleAnimate 1.4575s infinite normal;
+
+		&_1 {
+			animation-delay:0.2895s;
+		}
+
+		&_2 {
+			animation-delay:0.6855s;
+		}
+
+		&_3 {
+			animation-delay:0.8785s;
+		}
+	}
+}
+
+@keyframes circleAnimate {
+	0% {}
+
+	50% {
+		background-color:white;
+	}
+
+	100% {}
+}
+
+@keyframes loaderAnimate {
+
+	100% {
+		opacity: 0;
+		visibility: hidden;
+		z-index: -100;
+	}
+}

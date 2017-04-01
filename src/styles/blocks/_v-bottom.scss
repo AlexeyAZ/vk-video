@@ -3,6 +3,16 @@
     position: relative;
     min-height: 250px;
 
+    .v-related {
+        border-left: 1px solid $border;
+    }
+
+    .v-related__head-title {
+        color: #2b2f33;
+        font-weight: normal;
+        font-size: 16px;
+    }
+
     .v-related__list-item {
 
         &:hover {
@@ -16,5 +26,19 @@
         &:hover {
             background-color: transparent;
         }
+    }
+
+    .v-related__list-name {
+        color: $link;
+        opacity: 1;
+
+            &:hover {
+            text-decoration: underline;
+            }
+    }
+
+    .v-related__list-views {
+        color: #656565;
+        opacity: 1;
     }
 }

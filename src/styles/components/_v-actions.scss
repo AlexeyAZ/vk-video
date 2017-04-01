@@ -5,6 +5,10 @@
     width: $v-actions-width;
     z-index: $v-actions-z-index;
 
+    @include media(w768) {
+        display: none;
+    }
+
     &__btn {
         transition: $trans;
         opacity: 0.3;

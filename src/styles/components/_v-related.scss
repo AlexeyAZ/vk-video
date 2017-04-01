@@ -8,6 +8,14 @@
     height: 100%;
     width: $v-related-width;
 
+    @include media(w1024) {
+        width: $v-related-width-tablet;
+    }
+
+    @include media(w500) {
+        display: none;
+    }
+
     &:hover {
 
         .v-related__head-controls {
@@ -81,8 +89,13 @@
         padding: 6px 5px 6px 10px;
         text-decoration: none;
 
+        @include media(w1024) {
+            padding: 6px 10px;
+        }
+
         &:hover {
             background-color: $v-related__list-item-hover;
+            text-decoration: none;
         }
 
         &_active {
@@ -95,6 +108,7 @@
     }
 
     &__list-img {
+        background-image: url("../img/video-img.jpg");
         background-color: cadetblue;
         background-size: cover;
         background-position: center;
@@ -120,6 +134,10 @@
     &__list-info {
         color: white;
         padding-left: $v-related__list-img-width + 10px;
+
+        @include media(w1024) {
+            display: none;
+        }
     }
 
     &__list-name {

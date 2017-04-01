@@ -6,6 +6,10 @@
     width: $v-nav-width;
     z-index: $v-nav-z-index;
 
+    @include media(w768) {
+        display: none;
+    }
+
     &:hover {
 
         .v-nav__icon {
